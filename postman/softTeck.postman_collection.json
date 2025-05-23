@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"nombre\": \"Angel122\",\r\n  \"apellido\": \"Flores122\",\r\n  \"email\": \"angel.flores@example.com446w2\",\r\n  \"creditos\":1,\r\n  \"promedio\":2,\r\n  \"semestre\": 10\r\n}",
+					"raw": "{\r\n  \"nombre\": \"Angel\",\r\n  \"apellido\": \"Flores\",\r\n  \"email\": \"aflores@gmail.com\",\r\n  \"creditos\":1,\r\n  \"promedio\":2,\r\n  \"semestre\": 10\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -91,13 +91,14 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8081/estudiantes/1",
+					"raw": "http://localhost:8080/api/estudiantes/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8080",
 					"path": [
+						"api",
 						"estudiantes",
 						"1"
 					]
