@@ -43,9 +43,10 @@ public class EstudianteServiceImpl implements EstudianteService {
 			throw new EmailDuplicadoException(dto.getEmail());
 		}
 
-		mapper.actualizarEntidadDesdeDto(dto, existente);
+		Estudiante actualizado = mapper.toEntity(dto);
+		actualizado.setId(existente.getId());
 
-		Estudiante actualizado = repository.save(existente);
+		actualizado = repository.save(actualizado);
 		logger.info("Estudiante actualizado: {}", actualizado);
 		return mapper.toDto(actualizado);
 	}

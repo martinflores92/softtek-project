@@ -10,6 +10,5 @@ import com.softtek.project.jpa.model.Estudiante;
 public interface EstudianteMapper {
     Estudiante toEntity(EstudianteDTO dto);
     EstudianteDTO toDto(Estudiante entity);
-    void actualizarEntidadDesdeDto(EstudianteDTO dto, @MappingTarget Estudiante entidad);
 
 }
